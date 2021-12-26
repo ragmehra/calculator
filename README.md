@@ -1,5 +1,5 @@
 # calculator
-Preview: ragmehra.github.io/calculator
+[Preview Link](ragmehra.github.io/calculator)
 
 A digital calculator. 
 
