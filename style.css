@@ -26,16 +26,26 @@ main {
     border: solid black 2px;
     background-color: rgba(128, 128, 128, 0.288);
     background: linear-gradient(45deg, rgba(255, 0, 0, 0.418), rgba(0, 0, 255, 0.37));
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10%;
+    min-height: 10%;
     padding: 30px;
     margin-top: 0;
     letter-spacing: 2px;
     color: rgba(252, 252, 252, 0.884);
     font-size: 25px;
     max-width: 400px;
+    
+}
+
+#display p {
+    width: 100%;
+    overflow-wrap : break-word;
+    min-height: 30px;
+    flex-grow: 1;
+    max-height: 100%;
 }
 
 #backspace {
