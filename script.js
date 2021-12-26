@@ -42,7 +42,7 @@ function compute () {
     console.log("Operator: ", operator);
     console.log("Num2: ", num2);
 
-    displayContent = operate(operator, num1, num2);
+    if (operator && num1 && num2) displayContent = operate(operator, num1, num2);
     let display = document.querySelector("#display");
     display.textContent = displayContent;
     contentVariable = "";
@@ -69,7 +69,11 @@ function updateDisplay (e) {
         contentVariable += e.target.value;
     }
     else if (e && e.target.value !== "=" && 
-    e.target.classList.contains("operator") && !operator) {
+    e.target.classList.contains("operator")) {
+        if (operator) {
+            compute();
+        
+        }
         num1 = displayContent;
         operator = e.target.value;
         displayContent += e.target.value;
